@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DOM HTML</title>
+</head>
+<style type="text/css" media="all">
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  button {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin: 0 10px;
+    border: none;
+    outline: none;
+  }
+  
+  .wadahbtn {
+    width: 100%;
+    height: max-content;
+    padding: 0 20px;
+  }
+  
+  #blue {
+    background-color: #4065d6;
+  }
+  #blue:active {
+    background-color: #142969;
+  }
+  
+  #green {
+    background-color: #00b7b7;
+  }
+  #green:active {
+    background-color: #006b6b;
+  }
+  
+  #red {
+    background-color: #ff8fa2;
+  }
+  #red:active {
+    background-color: #b64256;
+  }
+  
+  #blue
+</style>
+
+<body>
+  <img id="foto" src="img/blue.jpg" alt="" width="260px" />
+  
+  <div class="wadahbtn">
+    <button id="blue"></button>
+    <button id="green"></button>
+    <button id="red"></button>
+  </div>
+  
+  <script type="text/javascript" charset="utf-8">
+    document.getElementById("blue").onclick=function (){
+    document.getElementById("foto").src="img/blue.jpg"
+    }
+    document.getElementById("green").onclick=function (){
+    document.getElementById("foto").src="img/green.jpg"
+    }
+    document.getElementById("red").onclick=function (){
+    document.getElementById("foto").src="img/red.jpg"
+    }
+  </script>
+</body>
+
+</html>
